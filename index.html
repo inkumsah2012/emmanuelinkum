@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <style>
+    body { padding-top: 56px; margin: 0; }
+    html { scroll-behavior: smooth; }
+
+    .navbar { box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: background-color 0.3s ease; }
+    .navbar-nav .nav-link { color: white; }
+    .navbar-nav .nav-link:hover { color: #f8f9fa; }
+
+    @media (max-width: 992px) {
+      .navbar-collapse { background-color: #343a40; }
+    }
+
+    .home-section {
+      height: 100vh;
+      background: rgba(0,0,0,0.6);
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .home-section video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .home-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .home-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .home-section .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .home-section .social-icons a:hover {
+      color: #17a2b8;
+    }
+
+    /* Contact section background */
+    .contact-section {
+      background-color: #343a40;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <video autoplay muted loop playsinline>
+      <source src="C:\Users\emman\Documents\Portfolio\images\Home\videos.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>EMMANUEL YAW INKUM</h1>
+    <p>Data Scientist | Data Analyst</p>
+    <div class="social-icons">
+      <a href="https://github.com/inkumsah2012" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/emmanuel-yaw-inkum-769bb1125" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/inkumsah2012" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Emmanuel's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <img src="images/about/1.jpg" alt="About Me" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover;">
+      <p>I am a results-driven Data Scientist and Data Analyst with a strong academic foundation and hands-on experience in delivering data-driven solutions that inform business strategy and enhance operational performance. I hold an MSc in Data Science from Robert Gordon University and an MSc in Applied Statistics from Kwame Nkrumah University of Science and Technology, complemented by a BSc in Economics with Computing and an HND in Statistics.</p>
+    <p>My expertise spans across data analytics, machine learning, statistical modeling, and business intelligence. I am proficient in Python, R, SQL, Power BI, and Excel, with a proven ability to collect, clean, and transform large datasets into actionable insights. I have applied these skills in diverse sectors including digital banking, business operations, and research analytics.</p>
+    <p>In my recent roles, I led key data projects that improved data accuracy, optimized resource allocation, and enabled predictive modeling using explainable AI techniques. I’ve also developed interactive dashboards in Power BI to visualize performance metrics and support data-driven decision-making at the executive level.</p>
+    <p>I am passionate about solving complex problems through data, committed to continuous learning, and driven by a desire to create meaningful impact through analytics and innovation.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <!-- Project Cards -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of project 1.</p>
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Description of project 2.</p>
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Description of project 3.</p>
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section bg-white">
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <div class="row">
+        <!-- Skill Cards -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/1.png" class="card-img-top" alt="Python">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Data manipulation and machine learning.</p>
+              <a href="#" class="btn btn-outline-primary">Link to course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+            <div class="card-body">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">Create impactful charts and dashboards.</p>
+              <a href="#" class="btn btn-outline-primary">Link to course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+            <div class="card-body">
+              <h5 class="card-title">SQL</h5>
+              <p class="card-text">Query databases and perform analysis.</p>
+              <a href="#" class="btn btn-outline-primary">Link to course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+            <div class="card-body">
+              <h5 class="card-title">Data Storytelling</h5>
+              <p class="card-text">Communicate insights with clarity.</p>
+              <a href="#" class="btn btn-outline-primary">Link to course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (with Statistical Analysis added) -->
+  <section id="services" class="services-section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img src="icons/analytics.png" class="mb-3" alt="Data Analytics" style="height: 200px;">
+              <h5 class="card-title">Data Analytics</h5>
+              <p class="card-text">Transform raw data into actionable insights using Excel, SQL, and Power BI.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img src="icons/ml.png" class="mb-3" alt="Machine Learning" style="height: 200px;">
+              <h5 class="card-title">Machine Learning</h5>
+              <p class="card-text">Build predictive models using Python, scikit-learn, and explainable AI techniques.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img src="icons/dashboard.png" class="mb-3" alt="Dashboard Design" style="height: 200px;">
+              <h5 class="card-title">Dashboard Design</h5>
+              <p class="card-text">Create interactive dashboards in Power BI to support decision-making.</p>
+            </div>
+          </div>
+        </div>
+        <!-- New Statistical Analysis Service -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img src="icons/statistics.png" class="mb-3" alt="Statistical Analysis" style="height: 270px;">
+              <h5 class="card-title">Statistical Analysis</h5>
+              <p class="card-text">Use R, Excel, and Python to perform hypothesis testing, regression, and exploratory data analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Black Background) -->
+  <section id="contact" class="contact-section text-white">
+    <div class="container">
+      <h2 class="text-center text-white">CONTACT US</h2>
+      <p class="text-center text-light mb-5">Feel free to reach out via the form below</p>
+      <form action="https://formspree.io/f/mzzroapj" method="POST">
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control mb-3" placeholder="Your Name *" required />
+            <input type="email" name="email" class="form-control mb-3" placeholder="Your Email *" required />
+            <input type="tel" name="phone" class="form-control mb-3" placeholder="Your Phone *" required />
+          </div>
+          <div class="col-md-6">
+            <textarea name="message" rows="7" class="form-control mb-3" placeholder="Your Message *" required></textarea>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-warning px-5 py-2 font-weight-bold">SEND MESSAGE</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
